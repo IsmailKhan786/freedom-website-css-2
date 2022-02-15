@@ -13,14 +13,14 @@ FOOTER
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cookie&family=Poppins:wght@300;400;500;700&display=swap');
 * {
-    padding:0 2%;
+   
     margin:0;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
 }
-h1,h2,h3 {
+h1,h2,h3,h4 {
     color:#3ae374; 
     font-family: 'Secular One', sans-serif;
 }
@@ -82,7 +82,15 @@ header nav a.active{
 header nav a.active{
     background-color: #3ae374;
 }
-@media (max-width:500px) {
+
+    header nav .nav-center{
+        width: 30%;
+        margin:0 auto 0 auto;
+      }
+
+
+
+@media (max-width:800px) {
     header {
         padding-left: 10px;
         padding-right: 10px;
@@ -99,21 +107,51 @@ header nav a.active{
         padding-right: 10px;
         font-size: 14px;
     }
+    header nav .nav-center{
+        width:100%;
+        margin:0 auto 0 auto;
+      
+    }
     
-
-}
-@media (min-width:1000px) {
     
-header nav .nav-center{
-    padding-left:500px;
-}
 }
 
 
+/* PILLS
+================================================================================================================== */
+
+.button {
+    background-color:#3ae374;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .button:hover {
+    background-color:#3ae374;
+  }
+
+/* IMAGES
+================================================================================================================== */
+.img-responsive{
+    height:auto;
+    max-width: 100%;
+}
+
+
+/* SIDEBAR
+================================================================================================================== */
 
 
 /* FOOTER
 ================================================================================================================== */
+
 .footer{
     text-align: center;
     background-color: #1e272e;
@@ -147,3 +185,113 @@ header nav .nav-center{
 .border-circle {
     border-radius: 50%;
 }
+
+
+
+
+/* MAIN
+================================================================================================================== */
+
+main {
+    display:flex;
+    flex-direction: row;
+    padding: 0 20px;
+    }
+    
+    @media (max-width:500px) {
+        main{
+            flex-direction: column;
+    
+        }
+        main .main-content{
+            padding-right:0;
+        }
+    }
+    @media (max-width:768px) {
+        main{
+            flex-direction: column;
+        }
+        main .main-content {
+                padding-right: 0;
+        }
+    }
+    main{
+        padding-top:20px;
+    }
+    /* MAIN CONTENT
+    ================================================================================================================== */
+    .main-content{
+        flex-basis: 75%;
+        padding-right:20px;
+    }
+    @media (max-width: 768px) {
+        .main-content {
+            padding-right: 0;
+        }
+    }
+    
+    /* SIDEBAR
+    ================================================================================================================== */
+    .sidebar{
+        flex-basis: 25%;
+    }
+    
+    .sidebar section{
+        margin-bottom:25px;
+    }
+    .sidebar section:last-child{
+        margin-bottom: 0;
+    }
+    .sidebar section h4,
+    .sidebar section p {
+        margin: 0;
+    }
+    .sidebar section h4 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .sidebar section form{
+        display: flex;
+        width: 100%;
+        margin-top:10px;
+    }
+    .sidebar section form input{
+        flex-grow: 3;
+        background-color: #dfe6e9;
+        border: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 15px;
+    }
+    
+    
+    @media (max-width: 768px) {
+        .sidebar {
+            border-top-color: #dfe6e9;
+            border-top-width: 1px;
+            border-top-style: solid;
+            padding-top: 25px;
+            margin-top: 25px;
+        }
+    }
+    
+    /* PAGE CONTENT
+    ================================================================================================================== */
+    .page-content{
+        padding-bottom: 30px;
+    }
+    .page-content img{
+        margin-bottom:10px;
+    }
+    .page-content h2{
+        margin:0;
+        margin-bottom:10px;
+    }
+    .page-content p{
+        margin:0;
+    }
+    .page-content:last-child{
+        padding-bottom:100px;
+    }
+    /* PAGE SUB CONTENT
+    ================================================================================================================== */
