@@ -22,9 +22,8 @@ body {
 }
 h1,h2,h3,h4 {
     color:#3ae374; 
-    font-family: 'Secular One', sans-serif;
+ 
 }
-
 ::selection {
     background-color:darkorchid;
     color: #fff;
@@ -117,14 +116,14 @@ header nav a.active{
 }
 
 
-/* PILLS
+/* CAPSULES
 ================================================================================================================== */
 
 .button {
     background-color:#3ae374;
     border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -136,6 +135,11 @@ header nav a.active{
   .button:hover {
     background-color:#3ae374;
   }
+  @media (max-width:800px) {
+      .capsules{
+      padding-bottom:30px;
+  }
+}
 
 /* IMAGES
 ================================================================================================================== */
@@ -221,7 +225,7 @@ main {
     /* MAIN CONTENT
     ================================================================================================================== */
     .main-content{
-        flex-basis: 75%;
+        flex-basis: 80%;
         padding-right:20px;
     }
     @media (max-width: 768px) {
@@ -233,7 +237,8 @@ main {
     /* SIDEBAR
     ================================================================================================================== */
     .sidebar{
-        flex-basis: 25%;
+        flex-basis: 20%;
+        padding-left:10px;
     }
     
     .sidebar section{
@@ -272,9 +277,20 @@ main {
             border-top-style: solid;
             padding-top: 25px;
             margin-top: 25px;
+            padding-left:0;
         }
     }
     
+    .border-para {
+        padding-bottom: 3px;
+        border:1px outset gainsboro;
+        border-top:none ;
+        border-left: none;
+        border-right:none;
+    }
+    .category p:last-child{
+        border-bottom:#dfe6e9;
+    }
     /* PAGE CONTENT
     ================================================================================================================== */
     .page-content{
@@ -293,5 +309,72 @@ main {
     .page-content:last-child{
         padding-bottom:100px;
     }
+    @media (max-width:800px) {
+        .page-content:last-child{
+            padding-bottom: 0;
+        }
+        .header .logo{
+            padding-top:50px !important;
+        }
+    }
+
+    .page-content .search {
+        background-color: #dfe6e9;
+        width:98.2%;
+        border-radius: 10px;
+        padding:15px 10px;
+        border-style: none;
+        margin-bottom:25px;
+    }
+    .page-content p {
+        padding-bottom: 15px;
+    }
+    .page-content div h3 {
+        color:#1e272e
+    }
     /* PAGE SUB CONTENT
+    ================================================================================================================== */ 
+
+
+
+    
+
+/* MAIN
+================================================================================================================== */
+
+
+
+    /* MAIN CONTENT
     ================================================================================================================== */
+    
+.about-content{
+    display:flex;
+    flex-direction: row;
+    padding: 0 20px;
+    }
+.about-content .about-image
+.about-content .about-para {
+    flex-basis: 50%;
+}
+.about-para{
+    margin-left:0px
+}
+.page-content .about-right-para {
+    margin-left:100px;
+    width:50%;
+}
+.page-content .about-left-para {
+    width:50%;
+
+/* }
+@media (max-width:768px) {
+    .about-content{
+        flex-direction: column;
+    }
+    .about-left-para {
+        width: 100%;
+    }
+    .about-right-para {
+        margin-left:0;
+    }
+} */
