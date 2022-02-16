@@ -1,0 +1,36 @@
+
+    /* 
+    ================================================================================================================== */
+    
+    .about-content{
+        display:flex;
+        flex-direction: row;
+       
+        }
+   
+    .about-content .left {
+      flex-basis: 50%;
+    }
+    .about-content .right {
+        flex-basis:50% ;
+        margin-left:150px;
+        
+    }
+    
+    @media (max-width:900px) {
+        .about-content{
+            flex-direction: column;
+        }
+         .about-content {
+                padding-right: 0;
+        }
+        .about-content .right ,.about-content .left {
+            margin-left:0;
+            width: 100%;
+        }
+      
+        
+
+    }
+   
+    

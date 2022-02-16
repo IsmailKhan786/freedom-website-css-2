@@ -344,37 +344,3 @@ main {
 
 
 
-    /* MAIN CONTENT
-    ================================================================================================================== */
-    
-.about-content{
-    display:flex;
-    flex-direction: row;
-    padding: 0 20px;
-    }
-.about-content .about-image
-.about-content .about-para {
-    flex-basis: 50%;
-}
-.about-para{
-    margin-left:0px
-}
-.page-content .about-right-para {
-    margin-left:100px;
-    width:50%;
-}
-.page-content .about-left-para {
-    width:50%;
-
-/* }
-@media (max-width:768px) {
-    .about-content{
-        flex-direction: column;
-    }
-    .about-left-para {
-        width: 100%;
-    }
-    .about-right-para {
-        margin-left:0;
-    }
-} */
