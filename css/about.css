@@ -1,5 +1,5 @@
 
-    /* 
+    /* ABOUT CONTENT
     ================================================================================================================== */
     
     .about-content{
@@ -7,13 +7,15 @@
         flex-direction: row;
        
         }
-   
+
     .about-content .left {
       flex-basis: 50%;
+      text-align: right;
     }
     .about-content .right {
         flex-basis:50% ;
         margin-left:150px;
+        text-align: left;
         
     }
     
@@ -33,4 +35,30 @@
 
     }
    
+    @media (min-width:1000px) {
+        
+        
+      
+    .about-content::after {
+        content: "";
+        
+        position: absolute;
+        width: 5px;
+        height: 1030px;
+        top: 50px;
+        left: 40%;
+        display: block;
+        margin-top:470px;
+        border-style: dotted;
+        color:#3ae374; /*  border-left: 2px dotted #3ae374 ; */
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+     }
+    }
+   
+  
     
+    .about-title {
+        margin-bottom:30px;
+    }
